@@ -3,20 +3,29 @@ package com.parkerrandolph.pokemoncards.controller;
 import com.parkerrandolph.pokemoncards.models.PokemonInfo;
 import com.parkerrandolph.pokemoncards.service.PokemonApi;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.client.HttpClientErrorException;
 
-@RestController
+@Controller
 public class PokemonController {
 
     @Autowired
     private PokemonApi pokemonApi;
 
     @GetMapping("/")
-    public String homePage(@RequestParam String name, Model model){
-        PokemonInfo pokemonInfo;
+    public String homePage(){
         return "index";
+    }
+
+    @GetMapping("/pokemon")
+    public @ResponseBody PokemonInfo pokemon(@RequestParam String name){
+        try {
+            return pokemonApi.getPokemon(name);
+        }catch (HttpClientErrorException e){
+            System.out.println("Client Error 404, Not Found");
+            e.printStackTrace();
+        }
+        return null;
     }
 }

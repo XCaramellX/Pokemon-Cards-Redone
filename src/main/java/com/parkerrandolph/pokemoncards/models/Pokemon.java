@@ -5,9 +5,11 @@ import jakarta.persistence.*;
 @Entity
 public class Pokemon {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
+    @Column(unique = true, nullable = false)
+    private String name;
     @Column
     private long weight;
 
@@ -22,29 +24,18 @@ public class Pokemon {
         return id;
     }
 
-    public void setId(long id) {
-        this.id = id;
-    }
 
-    public long getWeight() {
-        return weight;
+    public void setName(String name) {
+        this.name = name;
     }
-
     public void setWeight(long weight) {
         this.weight = weight;
-    }
-
-    public long getHeight() {
-        return height;
     }
 
     public void setHeight(long height) {
         this.height = height;
     }
 
-    public long getBase_experience() {
-        return base_experience;
-    }
 
     public void setBase_experience(long base_experience) {
         this.base_experience = base_experience;

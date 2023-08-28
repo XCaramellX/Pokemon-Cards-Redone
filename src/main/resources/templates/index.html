@@ -4,20 +4,24 @@
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Pokemon Cards</title>
-    <link rel="stylesheet" type="text/css" href="../static/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
 </head>
 <body>
     <header>
         <h1>Pokemon Cards</h1>
     </header>
     <main>
+        <div id="pokemonInfo">
+            <p id="pokemonCardName"></p>
+            <p id="pokemonCardHeight"></p>
+            <p id="pokemonCardWeight"></p>
+            <p id="pokemonCardBaseExperience"></p>
+        </div>
         <label for="pokemonName"></label>
         <input type="text" id="pokemonName" name="pokemonName" placeholder="Enter a Pokemon Name...">
         <button id="getCard">Get Card!</button>
-        <div id="pokemonInfo"></div>
-
     </main>
     <footer></footer>
-<script src="../static/scripts/script.js"> </script>
+<script src="/scripts/script.js"> </script>
 </body>
 </html>
