@@ -1,0 +1,27 @@
+body{
+    background-color: red;
+
+}
+
+header{
+    text-align: center;
+}
+
+.info{
+    background-color: black;
+    align-self:center;
+    color: white;
+    margin: auto;
+    width: 300px;
+    height: 400px;
+    border-color: brown;
+    border-radius: 10px;
+}
+
+.nameInput{
+    position: absolute;
+    left: 42%;
+    bottom: 30%;
+}
+
+
