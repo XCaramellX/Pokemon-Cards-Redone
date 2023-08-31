@@ -20,12 +20,6 @@ public class PokemonController {
 
     @GetMapping("/pokemon")
     public @ResponseBody PokemonInfo pokemon(@RequestParam String name){
-        try {
-            return pokemonApi.getPokemon(name);
-        }catch (HttpClientErrorException e){
-            System.out.println("Client Error 404, Not Found");
-            e.printStackTrace();
-        }
-        return null;
+        return pokemonApi.getPokemon(name);
     }
 }

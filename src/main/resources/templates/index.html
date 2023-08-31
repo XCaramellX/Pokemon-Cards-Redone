@@ -11,15 +11,20 @@
         <h1>Pokemon Cards</h1>
     </header>
     <main>
-        <div class="info" id="pokemonInfo">
-            <p id="pokemonCardName"></p>
-            <p id="pokemonCardHeight"></p>
-            <p id="pokemonCardWeight"></p>
-            <p id="pokemonCardBaseExperience"></p>
+        <div class="cardContainer">
+            <div class="pokeImageBackground">
+                <img alt="pokemon" class="image">
+            </div>
+            <div class="info" id="pokemonInfo">
+                <p id="pokemonCardName"></p>
+                <p id="pokemonCardHeight"></p>
+                <p id="pokemonCardWeight"></p>
+                <p id="pokemonCardBaseExperience"></p>
+            </div>
         </div>
         <label for="pokemonName"></label>
         <div class="nameInput">
-            <input type="text" id="pokemonName" name="pokemonName" placeholder="Enter a Pokemon Name...">
+            <input type="text" id="pokemonName" name="pokemonName" placeholder="Enter a Pokemon">
             <button id="getCard">Get Card!</button>
         </div>
     </main>
