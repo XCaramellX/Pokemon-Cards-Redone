@@ -10,13 +10,13 @@ header{
 
 .cardContainer{
     position:absolute;
-    bottom:60%;
+    bottom:20%;
     left: 30%;
     background-color: #E25822;
     color: white;
     margin: 10%;
     width: 300px;
-    height: auto;
+    height: 400px;
     padding:10px;
     border-radius: 10px;
 }
@@ -29,6 +29,11 @@ header{
 .image{
     height: 200px;
     width: 200px;
+}
+
+.info{
+    background-color: #00BFFF;
+    color: black;
 }
 
 .nameInput{
