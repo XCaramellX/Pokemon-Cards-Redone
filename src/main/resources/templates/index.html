@@ -13,13 +13,16 @@
     <main>
         <div class="cardContainer">
             <div class="pokeImageBackground">
-                <img alt="pokemon" class="image" id="imageID">
+                <h4 id="pokemonCardType">Normal</h4>
+                <img src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png" alt="pokemon" class="image" id="imageID">
             </div>
-            <div class="info" id="pokemonInfo">
-                <p id="pokemonCardName"></p>
-                <p id="pokemonCardHeight"></p>
-                <p id="pokemonCardWeight"></p>
-                <p id="pokemonCardBaseExperience"></p>
+            <div class="info">
+                <h3 id="pokemonCardName">Ditto</h3>
+                <ul>
+                    <li id="pokemonCardHeight">Height: 3</li>
+                    <li id="pokemonCardWeight">Weight: 40</li>
+                    <li id="pokemonCardBaseExperience">Base Experience: 101</li>
+                </ul>
             </div>
         </div>
         <label for="pokemonName"></label>
@@ -28,7 +31,9 @@
             <button id="getCard">Get Card!</button>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+
+    </footer>
 <script src="/scripts/script.js"> </script>
 </body>
 </html>

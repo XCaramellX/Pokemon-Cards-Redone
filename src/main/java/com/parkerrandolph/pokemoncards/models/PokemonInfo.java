@@ -4,14 +4,12 @@ public class PokemonInfo {
 
     private String name;
 
+    private String types;
     private long id;
     private long weight;
     private long height;
     private long base_experience;
 
-    public long getId() {
-        return id;
-    }
 
     public String getName() {
         return name;

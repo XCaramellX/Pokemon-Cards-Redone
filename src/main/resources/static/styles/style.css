@@ -1,41 +1,70 @@
+
 body{
     background-color: #FBCEB1;
     font-family: "Arial";
-
 }
 
 header{
     text-align: center;
+
 }
 
 .cardContainer{
-    position:absolute;
-    bottom:20%;
+    position: absolute;
+    bottom: 20%;
     left: 30%;
-    background-color: #E25822;
+  background: rgb(226,88,34);
+  background: linear-gradient(128deg, rgba(226,88,34,1) 0%, rgba(119,43,14,1) 100%);
     color: white;
     margin: 10%;
+    padding: 10px;
     width: 300px;
     height: 400px;
-    padding:10px;
     border-radius: 10px;
 }
 
 .pokeImageBackground{
     text-align:center;
     background: linear-gradient(90deg, rgba(63,251,246,1) 0%, rgba(85,72,185,1) 100%);
+    position:absolute;
+    width: 300px;
+
 }
 
 .image{
-    height: 200px;
-    width: 200px;
+    height: 170px;
+    width: 170px;
 }
 
 .info{
     background-color: #00BFFF;
+    position: absolute;
+    bottom: 10px;
+    width: 300px;
+    height: 180px;
     color: black;
 }
 
+h3{
+    position: absolute;
+    left: 40%;
+}
+
+h4{
+    color: white;
+
+}
+
+ul{
+  list-style: none;
+  position: absolute;
+  bottom: 20%;
+}
+
+li{
+   font-size: 15px;
+
+}
 .nameInput{
     position: absolute;
     left: 42%;

@@ -13,6 +13,7 @@ function getSpecificPokemon(){
             document.getElementById("imageID").src =
             `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`;
             document.getElementById("pokemonCardName").innerText = pokemon.name;
+            document.getElementById("pokemonCardType").innerText = pokemon[types][type].name;
             document.getElementById("pokemonCardHeight").innerText = "Height: " + pokemon.height;
             document.getElementById("pokemonCardWeight").innerText = "Weight: " + pokemon.weight;
             document.getElementById("pokemonCardBaseExperience").innerText = "Base Experience: " +
